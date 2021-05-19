@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
@@ -9,6 +10,7 @@ namespace Chess.Pieces
 	{
 		private PieceType pieceType;
 		private List<string> legalMoves;
+		private bool isWhitePiece;
 		public PieceType type
 		{
 			get
@@ -29,9 +31,17 @@ namespace Chess.Pieces
 			}
 		}
 
+		public bool IsWhitePiece
+		{
+			get
+			{
+				return isWhitePiece;
+			}
+		}
+
 		public abstract void DisplayPiece(object sender, PaintEventArgs args);
 
-		public List<string> DetermineLegalMoves(List<string> PotentialPieceMoves)
+		private List<string> DetermineLegalMoves(List<string> PotentialPieceMoves)
 		{
 			return PotentialPieceMoves;
 		}

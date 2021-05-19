@@ -9,8 +9,8 @@ namespace Chess.Pieces
 	{
 		PieceType type { get; }
 		List<string> LegalMoves { get; set; }
+		bool IsWhitePiece { get; }
 		void DisplayPiece(object sender, PaintEventArgs args);
-		List<string> DetermineLegalMoves(List<string> PotentialPieceMoves);
 	}
 
 	public enum PieceType
