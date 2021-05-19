@@ -29,10 +29,7 @@ namespace Chess.Pieces
 			}
 		}
 
-		public void DisplayPiece(object sender, PaintEventArgs args)
-		{
-			throw new NotImplementedException();
-		}
+		public abstract void DisplayPiece(object sender, PaintEventArgs args);
 
 		public List<string> DetermineLegalMoves(List<string> PotentialPieceMoves)
 		{

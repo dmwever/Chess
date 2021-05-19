@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Chess
+namespace Chess.Pieces
 {
-	class King : IPiece
+	class King : Piece
 	{
 		
 	}
