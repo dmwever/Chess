@@ -10,7 +10,8 @@ namespace Chess.Pieces
 	{
 		public void DisplayPiece(object sender, PaintEventArgs args)
 		{
-			Color color = 
+			Graphics graphics = args.Graphics;
+
 		}
 	}
 }

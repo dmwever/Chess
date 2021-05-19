@@ -54,6 +54,12 @@ namespace Chess.Board
 			Brush brush = new SolidBrush(color);
 			Rectangle rectangle = new Rectangle(Rank * SquareLength + BoardOffset, File * SquareLength + BoardOffset, SquareLength, SquareLength);
 			graphics.FillRectangle(brush, rectangle);
+			DisplayPiece(graphics);
+		}
+
+		private void DisplayPiece(Graphics graphics)
+		{
+			Piece.DisplayPiece
 		}
 
 		private Color GetColor()
