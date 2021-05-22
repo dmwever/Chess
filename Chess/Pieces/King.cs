@@ -8,9 +8,10 @@ namespace Chess.Pieces
 {
 	class King : Piece
 	{
-		public void DisplayPiece(object sender, PaintEventArgs args)
+		public override void DisplayPiece(object sender, PaintEventArgs args)
 		{
 			Graphics graphics = args.Graphics;
+
 
 		}
 	}
