@@ -22,12 +22,12 @@ namespace Chess.Board
 		{
 			Rank = rank;
 			File = file;
-			RankFileName = GetRankFile(rank, file);
-			Piece = null;
+			RankFileName = GetRankFileName(rank, file);
+			Piece = new King(PieceColor.White);
 			LightSquare = IsLightSquare(rank, file);
 		}
 
-		private string GetRankFile(int rank, int file)
+		private string GetRankFileName(int rank, int file)
 		{
 			StringBuilder RankFile = new StringBuilder("");
 			RankFile.Append(GetRank(rank));

@@ -8,16 +8,8 @@ namespace Chess.Pieces
 {
 	public abstract class Piece : IPiece
 	{
-		private PieceType pieceType;
 		private List<string> legalMoves;
-		private bool isWhitePiece;
-		public PieceType type
-		{
-			get
-			{
-				return pieceType;
-			}
-		}
+		private PieceColor color;
 
 		public List<string> LegalMoves
 		{
@@ -31,11 +23,15 @@ namespace Chess.Pieces
 			}
 		}
 
-		public bool IsWhitePiece
+		public PieceColor Color
 		{
 			get
 			{
-				return isWhitePiece;
+				return color;
+			}
+			set
+			{
+				color = value;
 			}
 		}
 
@@ -45,6 +41,5 @@ namespace Chess.Pieces
 		{
 			return PotentialPieceMoves;
 		}
-
 	}
 }

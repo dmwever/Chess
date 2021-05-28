@@ -7,7 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="img\" />
+    <None Remove="img\Black Bishop.bmp" />
+    <None Remove="img\Black King.bmp" />
+    <None Remove="img\Black Knight.bmp" />
+    <None Remove="img\Black Pawn.bmp" />
+    <None Remove="img\Black Queen.bmp" />
+    <None Remove="img\Black Rook.bmp" />
+    <None Remove="img\White Bishop.bmp" />
+    <None Remove="img\White King.bmp" />
+    <None Remove="img\White Knight.bmp" />
+    <None Remove="img\White Pawn.bmp" />
+    <None Remove="img\White Queen.bmp" />
+    <None Remove="img\White Rook.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="img\Black Bishop.bmp" />
+    <EmbeddedResource Include="img\Black King.bmp" />
+    <EmbeddedResource Include="img\Black Knight.bmp" />
+    <EmbeddedResource Include="img\Black Pawn.bmp" />
+    <EmbeddedResource Include="img\Black Queen.bmp" />
+    <EmbeddedResource Include="img\Black Rook.bmp" />
+    <EmbeddedResource Include="img\White Bishop.bmp" />
+    <EmbeddedResource Include="img\White King.bmp" />
+    <EmbeddedResource Include="img\White Knight.bmp" />
+    <EmbeddedResource Include="img\White Pawn.bmp" />
+    <EmbeddedResource Include="img\White Queen.bmp" />
+    <EmbeddedResource Include="img\White Rook.bmp" />
   </ItemGroup>
 
 </Project>

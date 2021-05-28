@@ -24,8 +24,7 @@ namespace Chess
 			Application.SetHighDpiMode(HighDpiMode.SystemAware);
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			ChessBoard chessBoard = new ChessBoard();
-			Application.Run(chessBoard);
+			Application.Run(new ChessBoard());
 		}
 	}
 }
